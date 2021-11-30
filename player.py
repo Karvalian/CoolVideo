@@ -6,7 +6,8 @@ cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 def process_frame(img):
     img = cv2.resize(img, (1920//2, 1080//2))
     cv2.imshow('image', img)
-    cv2.waitKey(1)
+    cv2.waitKey(0)
+    
     print(img.shape)
 
 
